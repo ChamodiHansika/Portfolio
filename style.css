@@ -1,0 +1,286 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.main{
+    width: 100%;
+    background: url(pic/bg.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+    font-family: sans-serif;
+}
+
+.navbar{
+    width: 86%;
+    display: flex;
+    margin: auto;
+    padding: 10px 0;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .logo{
+    width: 160px;
+    cursor: pointer;
+    margin-top: -3%;
+    margin-left: -2%;
+}
+
+ul{
+    margin-top: -4%;
+}
+
+ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 10px 16px;
+}
+
+ul li a{
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    color: rgb(15, 14, 14);
+    margin-top: -3%;
+    transition: .4s ease;
+
+}
+
+ul li a:hover{
+    color: rgb(240, 26, 54);
+}
+
+.info{
+    margin-left: 7%;
+    margin-top: 6%;
+}
+
+.info h1{
+    font-size: 55px;
+    color: rgb(36,32,30);
+}
+
+.info h3{
+    font-size: 18px;
+    letter-spacing: 1px;
+    line-height: 24px;
+}
+
+.info span{
+    color: rgb(237, 10, 44);
+}
+
+.info a{
+    text-decoration:  none;
+    color: #fff;
+    background: rgb(36,32,30);
+    margin: 26px 0;
+    padding: 10px 18px;
+    border-radius: 10px;
+    display: inline-block;
+    transition: .4s ease;
+}
+
+.info a:hover{
+    background: rgb(240, 26, 54);
+}
+
+.image{
+    width: 30%;
+    height: 60%;
+    position: absolute;
+    right: 100px;
+    bottom: 0;
+}
+
+.image img{
+    position: absolute;
+    height: 140%;
+    left: 40%;
+    transform: translate(-55%);
+    bottom: 0;
+    transition: left 2s ease;
+}
+
+.image:hover .girl{
+    left: 55%;
+}
+
+.icons a{
+    text-decoration: none;
+    color: #000;
+}
+
+.icons ion-icon{
+    margin-left: 7%;
+    color: #000;
+    margin-right: -60px;
+    font-size: 40px;
+    transition: .4s ease;
+    
+}
+
+.icons ion-icon:hover{
+    color: rgb(240, 26, 54);
+}
+
+.about-info {
+    margin: -3% auto;
+    width: 80%;
+    background: #fff;
+    padding: 0.5rem;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-right: 2%;
+}
+
+.about-info h2 {
+    font-size: 25px;
+    color: rgb(36,32,30);
+    margin-bottom: 1rem;
+    border-bottom: 2px solid rgb(240, 26, 54);
+    padding-bottom: 0.5rem;
+}
+
+.about-info p {
+    font-size: 15px;
+    line-height: 1.6;
+    color: rgb(36,32,30);
+    margin-bottom: 1.5rem;
+}
+
+.about-info h3 {
+    font-size: 20px;
+    color: rgb(36,32,30);
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.about-info a {
+    text-decoration: none;
+    color: #fff;
+    background: rgb(36,32,30);
+    padding: 10px 18px;
+    border-radius: 10px;
+    display: inline-block;
+    transition: .4s ease;
+}
+
+.about-info a:hover {
+    background: rgb(240, 26, 54);
+}
+
+.skills-info {
+    margin: -3% auto;
+    width: 80%;
+    background: #fff;
+    padding: 0.5rem;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-right: 2%;
+    position: relative;
+    line-height: 1.1;
+}
+
+.skills-info img {
+    position: absolute;
+    right: 0;
+    bottom: 7rem;
+    max-width: 40%;
+    height: auto;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+.skills-info h2 {
+    font-size: 25px;
+    color: rgb(36, 32, 30);
+    margin-bottom: 1rem;
+    border-bottom: 2px solid rgb(240, 26, 54);
+    padding-bottom: 0.5rem;
+}
+
+.skill-section {
+    margin-bottom: 1.5rem;
+}
+
+.skill-section h3 {
+    font-size: 20px;
+    color: rgb(163, 10, 33);
+    margin-bottom: 0.5rem;
+}
+
+.skill-section ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.skill-section ul li {
+    font-size: 15px;
+    line-height: 1.6;
+    color: rgb(36, 32, 30);
+}
+
+.projects-info {
+    margin: -3% auto;
+    width: 78%;
+    background: #fff;
+    padding: 0.5rem;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-right: 2%;
+    position: relative;
+    line-height: 1.1;
+}
+
+.project {
+    flex: 1 1 calc(33.333% - 40px); /* Three projects per row, accounting for gap */
+    box-sizing: border-box;
+    background: #fff; /* Background for individual project items */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+}
+
+.project img {
+    width: 50%;
+    height: 50%;
+    border-radius: 10px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2); /* More pronounced shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+    margin-bottom: 20px;
+}
+
+.project img:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+}
+
+.project h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.project p {
+    line-height: 1.4; /* Adjusted line-height for paragraphs */
+}
+
+.projects-info a {
+    display: block;
+    margin-top: 20px;
+    text-align: center;
+    padding: 10px;
+    background: #007bff; /* Button background color */
+    color: #fff; /* Button text color */
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s ease; /* Smooth background transition */
+}
+
+.projects-info a:hover {
+    background: #0056b3; /* Button background color on hover */
+}
